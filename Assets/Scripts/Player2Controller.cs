@@ -6,10 +6,10 @@ using UnityEngine;
 /**
  * Controla el movimiento del personake.
  */
-public class PlayerController : MonoBehaviour {
+public class Player2Controller : MonoBehaviour {
 
-	public float speed 				= 10F; // Velocidad del personaje.
-	public float jumpSpeed 			= 15F; // Velocidad de salto.
+	public float speed 				= 15.0F; // Velocidad del personaje.
+	public float jumpSpeed 			= 8.0F; // Velocidad de salto.
 	public float gravity 			= 20.0F; // Gravedad.
 	private Vector3 moveDirection 	= Vector3.zero; // Direccion en que se mueve.
     public float fuerzaLanzamiento = 100.0f;
@@ -30,7 +30,8 @@ public class PlayerController : MonoBehaviour {
         if (controller.isGrounded) {
             
 
-            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+            moveDirection = new Vector3(Input.GetAxis("Character2Horizontal"), 0, Input.GetAxis("Character2Vertical"));
+            
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;
 
@@ -38,24 +39,6 @@ public class PlayerController : MonoBehaviour {
                 moveDirection.y = jumpSpeed;
             }
 
-            if (Input.GetKeyDown(KeyCode.A)) {
-                transform.Rotate(0,-90.0f,0);
-            }
-
-            if (Input.GetKeyDown(KeyCode.W))
-            {
-                transform.Rotate(0, 360.0f, 0);
-            }
-
-            if (Input.GetKeyDown(KeyCode.D))
-            {
-                transform.Rotate(0, 90.0f, 0);
-            }
-
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-                transform.Rotate(0, -180.0f, 0);
-            }
         }
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
@@ -83,9 +66,9 @@ public class PlayerController : MonoBehaviour {
     {
         Debug.Log(collision.gameObject.name);
         if (collision.gameObject.name.Equals("Bala")) {
-            //if (Input.GetKeyDown(KeyCode.E)) {
+            if (Input.GetKeyDown(KeyCode.E)) {
                 balaAgarrada = true;
-            //}       
+            }       
         }
     }
 
@@ -99,7 +82,8 @@ public class PlayerController : MonoBehaviour {
         {
             if (referenciaBala != null)
             {
-                referenciaBala.transform.position = this.transform.position + new Vector3(0, 3.7f, 0);
+                Debug.Log("Agarro la bala");
+                referenciaBala.transform.position = this.transform.position + new Vector3(0, 5f, 0);
             }
         }
     }

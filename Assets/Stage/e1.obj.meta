@@ -1,0 +1,245 @@
+fileFormatVersion: 2
+guid: 9c42763e9d06a17439840dba541165b3
+timeCreated: 1525551364
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Arena1_pCube1
+    100002: Arena1_pCube2
+    100004: Arena1_pCube3
+    100006: Arena1_pPlane1
+    100008: Arena2_pCube1
+    100010: Arena2_pCube2
+    100012: Arena2_pCube3
+    100014: Arena2_pPlane1
+    100016: Arena3_pCube1
+    100018: Arena3_pCube2
+    100020: Arena3_pCube3
+    100022: Arena3_pPlane1
+    100024: Arena4_pCube1
+    100026: Arena4_pCube2
+    100028: Arena4_pCube3
+    100030: Arena4_pPlane1
+    100032: //RootNode
+    100034: pCube4_Arena1
+    100036: pCube4_Arena2
+    100038: pCube4_Arena3
+    100040: pCube4_Arena4
+    100042: pCube5_Pilares
+    100044: Pilares_pCube10
+    100046: Pilares_pCube6
+    100048: Pilares_pCube7
+    100050: Pilares_pCube8
+    100052: Pilares_pCube9
+    400000: Arena1_pCube1
+    400002: Arena1_pCube2
+    400004: Arena1_pCube3
+    400006: Arena1_pPlane1
+    400008: Arena2_pCube1
+    400010: Arena2_pCube2
+    400012: Arena2_pCube3
+    400014: Arena2_pPlane1
+    400016: Arena3_pCube1
+    400018: Arena3_pCube2
+    400020: Arena3_pCube3
+    400022: Arena3_pPlane1
+    400024: Arena4_pCube1
+    400026: Arena4_pCube2
+    400028: Arena4_pCube3
+    400030: Arena4_pPlane1
+    400032: //RootNode
+    400034: pCube4_Arena1
+    400036: pCube4_Arena2
+    400038: pCube4_Arena3
+    400040: pCube4_Arena4
+    400042: pCube5_Pilares
+    400044: Pilares_pCube10
+    400046: Pilares_pCube6
+    400048: Pilares_pCube7
+    400050: Pilares_pCube8
+    400052: Pilares_pCube9
+    2100000: Arena1_pCube1Mat
+    2100002: Arena1_pCube2Mat
+    2100004: Arena1_pCube3Mat
+    2100006: Arena1_pPlane1Mat
+    2100008: Arena2_pCube1Mat
+    2100010: Arena2_pCube2Mat
+    2100012: Arena2_pCube3Mat
+    2100014: Arena2_pPlane1Mat
+    2100016: Arena3_pCube1Mat
+    2100018: Arena3_pCube2Mat
+    2100020: Arena3_pCube3Mat
+    2100022: Arena3_pPlane1Mat
+    2100024: Arena4_pCube1Mat
+    2100026: Arena4_pCube2Mat
+    2100028: Arena4_pCube3Mat
+    2100030: Arena4_pPlane1Mat
+    2100032: pCube4_Arena1Mat
+    2100034: pCube4_Arena2Mat
+    2100036: pCube4_Arena3Mat
+    2100038: pCube4_Arena4Mat
+    2100040: pCube5_PilaresMat
+    2100042: Pilares_pCube10Mat
+    2100044: Pilares_pCube6Mat
+    2100046: Pilares_pCube7Mat
+    2100048: Pilares_pCube8Mat
+    2100050: Pilares_pCube9Mat
+    2300000: Arena1_pCube1
+    2300002: Arena1_pCube2
+    2300004: Arena1_pCube3
+    2300006: Arena1_pPlane1
+    2300008: Arena2_pCube1
+    2300010: Arena2_pCube2
+    2300012: Arena2_pCube3
+    2300014: Arena2_pPlane1
+    2300016: Arena3_pCube1
+    2300018: Arena3_pCube2
+    2300020: Arena3_pCube3
+    2300022: Arena3_pPlane1
+    2300024: Arena4_pCube1
+    2300026: Arena4_pCube2
+    2300028: Arena4_pCube3
+    2300030: Arena4_pPlane1
+    2300032: pCube4_Arena1
+    2300034: pCube4_Arena2
+    2300036: pCube4_Arena3
+    2300038: pCube4_Arena4
+    2300040: pCube5_Pilares
+    2300042: Pilares_pCube10
+    2300044: Pilares_pCube6
+    2300046: Pilares_pCube7
+    2300048: Pilares_pCube8
+    2300050: Pilares_pCube9
+    3300000: Arena1_pCube1
+    3300002: Arena1_pCube2
+    3300004: Arena1_pCube3
+    3300006: Arena1_pPlane1
+    3300008: Arena2_pCube1
+    3300010: Arena2_pCube2
+    3300012: Arena2_pCube3
+    3300014: Arena2_pPlane1
+    3300016: Arena3_pCube1
+    3300018: Arena3_pCube2
+    3300020: Arena3_pCube3
+    3300022: Arena3_pPlane1
+    3300024: Arena4_pCube1
+    3300026: Arena4_pCube2
+    3300028: Arena4_pCube3
+    3300030: Arena4_pPlane1
+    3300032: pCube4_Arena1
+    3300034: pCube4_Arena2
+    3300036: pCube4_Arena3
+    3300038: pCube4_Arena4
+    3300040: pCube5_Pilares
+    3300042: Pilares_pCube10
+    3300044: Pilares_pCube6
+    3300046: Pilares_pCube7
+    3300048: Pilares_pCube8
+    3300050: Pilares_pCube9
+    4300000: Arena1_pCube1
+    4300002: Arena1_pCube2
+    4300004: Arena1_pCube3
+    4300006: Arena1_pPlane1
+    4300008: Arena2_pCube1
+    4300010: Arena2_pCube2
+    4300012: Arena2_pCube3
+    4300014: Arena2_pPlane1
+    4300016: Arena3_pCube1
+    4300018: Arena3_pCube2
+    4300020: Arena3_pCube3
+    4300022: Arena3_pPlane1
+    4300024: Arena4_pCube1
+    4300026: Arena4_pCube2
+    4300028: Arena4_pCube3
+    4300030: Arena4_pPlane1
+    4300032: pCube4_Arena1
+    4300034: pCube4_Arena2
+    4300036: pCube4_Arena3
+    4300038: pCube4_Arena4
+    4300040: pCube5_Pilares
+    4300042: Pilares_pCube10
+    4300044: Pilares_pCube6
+    4300046: Pilares_pCube7
+    4300048: Pilares_pCube8
+    4300050: Pilares_pCube9
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
