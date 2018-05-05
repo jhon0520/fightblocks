@@ -48,6 +48,9 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.R) && balaAgarrada)
         {
             balaAgarrada = false;
+
+            Rigidbody rb = referenciaBala.GetComponent<Rigidbody>();
+            rb.velocity = new Vector3(-20, 0, 0);
             /*
             Rigidbody rb = referenciaBala.GetComponent<Rigidbody>();
             rb.AddForce((new Vector3(0,20.0f,0.0f)) * fuerzaLanzamiento);*/
@@ -78,7 +81,7 @@ public class PlayerController : MonoBehaviour {
         {
             if (referenciaBala != null)
             {
-                referenciaBala.transform.position = this.transform.position + new Vector3(0, 1.0f, 0);
+                referenciaBala.transform.position = this.transform.position + new Vector3(0, 1f, 0);
             }
         }
     }
