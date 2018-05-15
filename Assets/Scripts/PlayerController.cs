@@ -12,15 +12,19 @@ public class PlayerController : MonoBehaviour {
 	public float jumpSpeed 			= 15F; // Velocidad de salto.
 	public float gravity 			= 20.0F; // Gravedad.
 	private Vector3 moveDirection 	= Vector3.zero; // Direccion en que se mueve.
-    public float fuerzaLanzamiento = 100.0f;
+    public float fuerzaLanzamiento = 30.0f;
+    public float fuerzaLanzamientoArriba = 15.0f;
 
-    GameObject referenciaBala;
+    GameObject referenciaBala,Character;
 
     public bool balaAgarrada = false;
 
     private void Start()
     {
         referenciaBala = GameObject.Find("Bala");
+        Character = GameObject.Find("Player");
+
+        Debug.Log("En el start");
     }
 
     void FixedUpdate()
@@ -28,34 +32,13 @@ public class PlayerController : MonoBehaviour {
         CharacterController controller = GetComponent<CharacterController>();
 
         if (controller.isGrounded) {
-            
 
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+
             moveDirection = transform.TransformDirection(moveDirection);
+
             moveDirection *= speed;
-
-            if (Input.GetButton("Jump")) {
-                moveDirection.y = jumpSpeed;
-            }
-
-            if (Input.GetKeyDown(KeyCode.A)) {
-                transform.Rotate(0,-90.0f,0);
-            }
-
-            if (Input.GetKeyDown(KeyCode.W))
-            {
-                transform.Rotate(0, 360.0f, 0);
-            }
-
-            if (Input.GetKeyDown(KeyCode.D))
-            {
-                transform.Rotate(0, 90.0f, 0);
-            }
-
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-                transform.Rotate(0, -180.0f, 0);
-            }
+            
         }
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
@@ -66,12 +49,21 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.R) && balaAgarrada)
         {
             balaAgarrada = false;
+            referenciaBala.GetComponent<Rigidbody>().useGravity = true;
+
+            float fuerzaLanzamientoAplicada = fuerzaLanzamiento;
+
+            Debug.Log(moveDirection);
+            if (moveDirection == new Vector3(0f,-0.4f,0f))
+            {
+                Debug.Log("Solto sin nada");
+                moveDirection = new Vector3(0,1.0f,0);
+                fuerzaLanzamientoAplicada = fuerzaLanzamientoArriba;
+            }
 
             Rigidbody rb = referenciaBala.GetComponent<Rigidbody>();
-            rb.velocity = new Vector3(-20, 0, 0);
-            /*
-            Rigidbody rb = referenciaBala.GetComponent<Rigidbody>();
-            rb.AddForce((new Vector3(0,20.0f,0.0f)) * fuerzaLanzamiento);*/
+            rb.velocity = moveDirection.normalized * fuerzaLanzamientoAplicada;
+
         }
 
     }
@@ -79,12 +71,18 @@ public class PlayerController : MonoBehaviour {
     /**
      * Manejo de eventos de colision.
      */
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collision)
     {
+       // Debug.Log("Colision con:" + collision.gameObject.name);
+
+        CharacterController controller = GetComponent<CharacterController>();
+
         Debug.Log(collision.gameObject.name);
-        if (collision.gameObject.name.Equals("Bala")) {
+        Debug.Log(collision.gameObject.tag);
+        if (collision.gameObject.name.Equals("Bala"))
+        {
             //if (Input.GetKeyDown(KeyCode.E)) {
-                balaAgarrada = true;
+            balaAgarrada = true;
             //}       
         }
     }
@@ -97,9 +95,10 @@ public class PlayerController : MonoBehaviour {
     {
         if (balaAgarrada)
         {
+            referenciaBala.GetComponent<Rigidbody>().useGravity = false;
             if (referenciaBala != null)
             {
-                referenciaBala.transform.position = this.transform.position + new Vector3(0, 3.7f, 0);
+                referenciaBala.transform.position = this.transform.position + new Vector3(0, 4.7f, 0);
             }
         }
     }
