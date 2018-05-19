@@ -349,6 +349,7 @@ MonoBehaviour:
   jumpSpeed: 15
   gravity: 20
   fuerzaLanzamiento: 30
+  fuerzaLanzamientoArriba: 15
   balaAgarrada: 0
 --- !u!54 &237436188
 Rigidbody:
@@ -705,6 +706,7 @@ MonoBehaviour:
   jumpSpeed: 8
   gravity: 20
   fuerzaLanzamiento: 1
+  fuerzaLanzamientoArriba: 15
   balaAgarrada: 0
 --- !u!23 &405940650
 MeshRenderer:
@@ -1042,7 +1044,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 695402685}
   m_LocalRotation: {x: 0.22282477, y: 0, z: 0, w: 0.9748585}
-  m_LocalPosition: {x: -0, y: 40, z: -43}
+  m_LocalPosition: {x: -0, y: 46.41, z: -56.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2229,6 +2231,7 @@ MonoBehaviour:
   jumpSpeed: 8
   gravity: 20
   fuerzaLanzamiento: 1
+  fuerzaLanzamientoArriba: 15
   balaAgarrada: 0
 --- !u!136 &1594758570
 CapsuleCollider:
