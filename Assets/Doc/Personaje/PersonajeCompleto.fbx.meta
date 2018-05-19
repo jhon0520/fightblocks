@@ -1,0 +1,211 @@
+fileFormatVersion: 2
+guid: 0e66e60532aff7d498d0ee4c43eafd42
+timeCreated: 1526763919
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: atras
+    100002: camera1
+    100004: Control_brazo_der
+    100006: Control_brazo_Izq
+    100008: Control_cabeza
+    100010: Control_torso
+    100012: ctrl_der
+    100014: ctrl_izq
+    100016: Der_brazo
+    100018: Der_brazo1
+    100020: Der_pierna
+    100022: Izq_brazo
+    100024: Izq_brazo2
+    100026: Izq_pierna1
+    100028: Master_Control
+    100030: mentalrayIbl1
+    100032: nurbsCircle1
+    100034: nurbsCircle2
+    100036: nurbsCircle3
+    100038: pCube1
+    100040: pCylinder1
+    100042: pCylinder2
+    100044: pCylinder3
+    100046: //RootNode
+    100048: polySurface1
+    100050: polySurface2
+    100052: polySurface3
+    100054: polySurface5
+    100056: polySurface6
+    100058: polySurface7
+    100060: polySurface8
+    100062: polySurface9
+    100064: Principal
+    100066: relleno
+    100068: transform1
+    100070: transform2
+    100072: transform3
+    100074: transform4
+    100076: transform5
+    100078: transform6
+    100080: transform7
+    400000: atras
+    400002: camera1
+    400004: Control_brazo_der
+    400006: Control_brazo_Izq
+    400008: Control_cabeza
+    400010: Control_torso
+    400012: ctrl_der
+    400014: ctrl_izq
+    400016: Der_brazo
+    400018: Der_brazo1
+    400020: Der_pierna
+    400022: Izq_brazo
+    400024: Izq_brazo2
+    400026: Izq_pierna1
+    400028: Master_Control
+    400030: mentalrayIbl1
+    400032: nurbsCircle1
+    400034: nurbsCircle2
+    400036: nurbsCircle3
+    400038: pCube1
+    400040: pCylinder1
+    400042: pCylinder2
+    400044: pCylinder3
+    400046: //RootNode
+    400048: polySurface1
+    400050: polySurface2
+    400052: polySurface3
+    400054: polySurface5
+    400056: polySurface6
+    400058: polySurface7
+    400060: polySurface8
+    400062: polySurface9
+    400064: Principal
+    400066: relleno
+    400068: transform1
+    400070: transform2
+    400072: transform3
+    400074: transform4
+    400076: transform5
+    400078: transform6
+    400080: transform7
+    2000000: camera1
+    2100000: lambert1
+    2100002: Guante
+    2100004: blinn5
+    2300000: Der_brazo1
+    2300002: Der_pierna
+    2300004: Izq_brazo2
+    2300006: Izq_pierna1
+    2300008: polySurface2
+    2300010: polySurface3
+    2300012: polySurface5
+    2300014: polySurface6
+    2300016: polySurface7
+    2300018: polySurface8
+    2300020: polySurface9
+    3300000: Der_brazo1
+    3300002: Der_pierna
+    3300004: Izq_brazo2
+    3300006: Izq_pierna1
+    3300008: polySurface2
+    3300010: polySurface3
+    3300012: polySurface5
+    3300014: polySurface6
+    3300016: polySurface7
+    3300018: polySurface8
+    3300020: polySurface9
+    4300000: polySurface5
+    4300002: polySurface7
+    4300004: polySurface8
+    4300006: polySurface2
+    4300008: polySurface9
+    4300010: Der_brazo1
+    4300012: polySurface3
+    4300014: Izq_brazo2
+    4300016: polySurface6
+    4300018: Der_pierna
+    4300020: Izq_pierna1
+    7400000: Take 001
+    9500000: //RootNode
+    10800000: atras
+    10800002: Principal
+    10800004: relleno
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
