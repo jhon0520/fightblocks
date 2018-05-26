@@ -15,21 +15,27 @@ public class PlayerController : MonoBehaviour {
     public float fuerzaLanzamiento = 30.0f;
     public float fuerzaLanzamientoArriba = 15.0f;
 
-    GameObject referenciaBala,Character;
+    GameObject referenciaBala;
+    //GameObject Character;
 
-    public bool balaAgarrada = false;
+    public static bool balaAgarrada = false;
 
     private void Start()
     {
         referenciaBala = GameObject.Find("Bala");
-        Character = GameObject.Find("Player");
+        //Character = GameObject.Find("Player");
 
-        Debug.Log("En el start");
+        //Debug.Log("En el start");
     }
 
     void FixedUpdate()
     {
         CharacterController controller = GetComponent<CharacterController>();
+
+        if (this.gameObject.transform.position.y <= 0.0f)
+        {
+            this.gameObject.transform.position = new Vector3(-7.18f, 3.67f, -0.42f);
+        }
 
         if (controller.isGrounded) {
 
@@ -58,16 +64,17 @@ public class PlayerController : MonoBehaviour {
 
             float fuerzaLanzamientoAplicada = fuerzaLanzamiento;
 
-            Debug.Log(moveDirection);
+           // Debug.Log(moveDirection);
             if (moveDirection == new Vector3(0f,-0.4f,0f))
             {
-                Debug.Log("Solto sin nada");
+                //Debug.Log("Solto sin nada");
                 moveDirection = new Vector3(0,1.0f,0);
                 fuerzaLanzamientoAplicada = fuerzaLanzamientoArriba;
             }
 
             Rigidbody rb = referenciaBala.GetComponent<Rigidbody>();
             rb.velocity = moveDirection.normalized * fuerzaLanzamientoAplicada;
+            Debug.Log("Lanzo personaje 1");
 
         }
 
@@ -80,10 +87,10 @@ public class PlayerController : MonoBehaviour {
     {
        // Debug.Log("Colision con:" + collision.gameObject.name);
 
-        CharacterController controller = GetComponent<CharacterController>();
+       // CharacterController controller = GetComponent<CharacterController>();
 
-        Debug.Log(collision.gameObject.name);
-        Debug.Log(collision.gameObject.tag);
+        //Debug.Log(collision.gameObject.name);
+       // Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.name.Equals("Bala"))
         {
             //if (Input.GetKeyDown(KeyCode.E)) {

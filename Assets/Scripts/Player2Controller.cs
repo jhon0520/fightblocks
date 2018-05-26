@@ -15,21 +15,27 @@ public class Player2Controller : MonoBehaviour {
     public float fuerzaLanzamiento = 30.0f;
     public float fuerzaLanzamientoArriba = 15.0f;
 
-    GameObject referenciaBala, Character;
+    GameObject referenciaBala;
+    //GameObject Character;
 
-    public bool balaAgarrada = false;
+    public static bool balaAgarrada = false;
 
     private void Start()
     {
         referenciaBala = GameObject.Find("Bala");
-        Character = GameObject.Find("Player");
+        //Character = GameObject.Find("Player");
 
-        Debug.Log("En el start");
+        //Debug.Log("En el start");
     }
 
     void FixedUpdate()
     {
         CharacterController controller = GetComponent<CharacterController>();
+
+        if (this.gameObject.transform.position.y <= 0.0f)
+        {
+            this.gameObject.transform.position = new Vector3(7.08f, 3.57f, -0.34f);
+        }
 
         if (controller.isGrounded)
         {
@@ -40,7 +46,7 @@ public class Player2Controller : MonoBehaviour {
 
             moveDirection *= speed;
 
-            if (Input.GetButton("Jump"))
+            if (Input.GetKey(KeyCode.Keypad0))
             {
                 moveDirection.y = jumpSpeed;
             }
@@ -52,14 +58,14 @@ public class Player2Controller : MonoBehaviour {
         verificarAgarreBala();
 
         // Si presiono R cuando tenia la bala agarrada deberia soltar bala.
-        if (Input.GetKeyDown(KeyCode.R) && balaAgarrada)
+        if (Input.GetKey(KeyCode.KeypadPeriod) && balaAgarrada)
         {
             balaAgarrada = false;
             referenciaBala.GetComponent<Rigidbody>().useGravity = true;
 
             float fuerzaLanzamientoAplicada = fuerzaLanzamiento;
 
-            Debug.Log(moveDirection);
+            //Debug.Log(moveDirection);
             if (moveDirection == new Vector3(0f, -0.4f, 0f))
             {
                 Debug.Log("Solto sin nada");
@@ -69,6 +75,7 @@ public class Player2Controller : MonoBehaviour {
 
             Rigidbody rb = referenciaBala.GetComponent<Rigidbody>();
             rb.velocity = moveDirection.normalized * fuerzaLanzamientoAplicada;
+            Debug.Log("Lanzo personaje 1");
 
         }
 
@@ -81,10 +88,10 @@ public class Player2Controller : MonoBehaviour {
     {
         // Debug.Log("Colision con:" + collision.gameObject.name);
 
-        CharacterController controller = GetComponent<CharacterController>();
+        //CharacterController controller = GetComponent<CharacterController>();
 
-        Debug.Log(collision.gameObject.name);
-        Debug.Log(collision.gameObject.tag);
+        //Debug.Log(collision.gameObject.name);
+        //Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.name.Equals("Bala"))
         {
             //if (Input.GetKeyDown(KeyCode.E)) {
