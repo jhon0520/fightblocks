@@ -1016,7 +1016,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &237436186
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1046,7 +1046,6 @@ MonoBehaviour:
   gravity: 20
   fuerzaLanzamiento: 30
   fuerzaLanzamientoArriba: 15
-  balaAgarrada: 0
 --- !u!54 &237436188
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1370,7 +1369,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 302549865}
   m_LocalRotation: {x: 0.21239258, y: -0, z: -0, w: 0.9771845}
-  m_LocalPosition: {x: -7.86, y: 6.12, z: -1.54}
+  m_LocalPosition: {x: 0.29, y: 6.12, z: -1.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1408,6 +1407,8 @@ MonoBehaviour:
   Heart4: {fileID: 1068887416}
   Heart5: {fileID: 1427316364}
   Heart6: {fileID: 1197029140}
+  ConstantePlayer1: 0
+  ConstantePlayer2: 0
 --- !u!1 &304002757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1906,7 +1907,6 @@ MonoBehaviour:
   gravity: 20
   fuerzaLanzamiento: 30
   fuerzaLanzamientoArriba: 15
-  balaAgarrada: 0
 --- !u!54 &382453826
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2158,7 +2158,6 @@ MonoBehaviour:
   gravity: 20
   fuerzaLanzamiento: 1
   fuerzaLanzamientoArriba: 15
-  balaAgarrada: 0
 --- !u!23 &405940650
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4690,7 +4689,6 @@ MonoBehaviour:
   gravity: 20
   fuerzaLanzamiento: 30
   fuerzaLanzamientoArriba: 15
-  balaAgarrada: 0
 --- !u!136 &1255824691
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4747,7 +4745,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1255824689}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.59, y: 3.67, z: -0.42}
+  m_LocalPosition: {x: -7.18, y: 3.67, z: -0.42}
   m_LocalScale: {x: 122.948586, y: 122.94849, z: 122.94849}
   m_Children:
   - {fileID: 633259935}
@@ -6354,7 +6352,6 @@ MonoBehaviour:
   gravity: 20
   fuerzaLanzamiento: 1
   fuerzaLanzamientoArriba: 15
-  balaAgarrada: 0
 --- !u!136 &1594758570
 CapsuleCollider:
   m_ObjectHideFlags: 0
