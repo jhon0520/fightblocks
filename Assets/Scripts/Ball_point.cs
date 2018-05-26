@@ -30,10 +30,12 @@ public class Ball_point : MonoBehaviour {
 
         if (collision.gameObject.name.Equals("Personaje01"))
         {
-            if (ConstantePlayer1 == 1)
+            if (ConstantePlayer1 == 0 && ConstantePlayer2 == 1)
             {
-
+                Debug.Log("Perdio vida personaje 2");
+                this.gameObject.transform.position = new Vector3(-7.86f, 6.12f, -1.54f);
                 ConstantePlayer1 = 0;
+
             }
             else
             {
@@ -43,9 +45,10 @@ public class Ball_point : MonoBehaviour {
         }
         else if (collision.gameObject.name.Equals("Personaje02"))
         {
-            if (ConstantePlayer1 == 1)
+            if (ConstantePlayer2 == 0 && ConstantePlayer1 == 1)
             {
-
+                Debug.Log("Perdio vida personaje 1");
+                this.gameObject.transform.position = new Vector3(-7.86f, 6.12f, -1.54f);
                 ConstantePlayer2 = 0;
             }
             else
