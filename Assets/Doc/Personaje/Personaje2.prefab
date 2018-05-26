@@ -226,10 +226,13 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4326721525720192}
-  - component: {fileID: 95871233385390018}
+  - component: {fileID: 143727320859849276}
+  - component: {fileID: 54518567286901782}
+  - component: {fileID: 136072279599937150}
+  - component: {fileID: 114623134277280154}
   m_Layer: 0
   m_Name: Personaje2
-  m_TagString: Untagged
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -407,7 +410,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1728429314839244}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.52, y: 5.82, z: 12.92}
+  m_LocalPosition: {x: 7.08, y: 3.57, z: -0.34}
   m_LocalScale: {x: 121.85941, y: 121.8593, z: 121.8593}
   m_Children:
   - {fileID: 4178608057872628}
@@ -979,20 +982,65 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1354803700923812}
   m_Mesh: {fileID: 4300010, guid: 56eab22244c98ac4f8685aa9ea5bb643, type: 3}
---- !u!95 &95871233385390018
-Animator:
-  serializedVersion: 3
+--- !u!54 &54518567286901782
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1728429314839244}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &114623134277280154
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1728429314839244}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 56eab22244c98ac4f8685aa9ea5bb643, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7daafa8ab52011742b8a6524daa8c748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  jumpSpeed: 15
+  gravity: 20
+  fuerzaLanzamiento: 30
+  fuerzaLanzamientoArriba: 15
+  balaAgarrada: 0
+--- !u!136 &136072279599937150
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1728429314839244}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.01
+  m_Height: 0.05
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.02, z: 0}
+--- !u!143 &143727320859849276
+CharacterController:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1728429314839244}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 0.04
+  m_Radius: 0.01
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.02, z: 0}
