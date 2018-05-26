@@ -5,4 +5,9 @@ Fight Blocks is a free open source video game used to aplied some basic game dev
 https://trello.com/b/FF2Eh15h/fightblocks
 
 # Historia
-En Blockland hay un torneo de boxeo para encontra al mejor blocket de la ciudad, donde cada contrincante tendra que poner a prueba sus tacticas de combate para poder seguir con vida.
+Un grupo de amigos encuentra una escenario abandonado, el cual contiene cuatro objetos en las esquinas donde estos les permite ser teletransportado a otras áreas del escenario. En el escenario fue encontrado un balón, con el cual este le permitió entre ellos competir en quién era eliminado una vez el contrincante lo tocara con el balón 3 veces, ah este juego lo llamaron... FightBlocks.
+
+# Integrantes del equipo.
+Andrés Fernando Restrepo - 2117391
+Jhon Edman Linares - 2126403
+Juan Camilo Correa Trejos - 2136643
