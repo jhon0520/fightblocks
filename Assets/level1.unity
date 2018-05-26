@@ -1046,7 +1046,6 @@ MonoBehaviour:
   gravity: 20
   fuerzaLanzamiento: 30
   fuerzaLanzamientoArriba: 15
-  balaAgarrada: 0
 --- !u!54 &237436188
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1408,6 +1407,8 @@ MonoBehaviour:
   Heart4: {fileID: 1068887416}
   Heart5: {fileID: 1427316364}
   Heart6: {fileID: 1197029140}
+  ConstantePlayer1: 0
+  ConstantePlayer2: 0
 --- !u!1 &304002757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1906,7 +1907,6 @@ MonoBehaviour:
   gravity: 20
   fuerzaLanzamiento: 30
   fuerzaLanzamientoArriba: 15
-  balaAgarrada: 0
 --- !u!54 &382453826
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2158,7 +2158,6 @@ MonoBehaviour:
   gravity: 20
   fuerzaLanzamiento: 1
   fuerzaLanzamientoArriba: 15
-  balaAgarrada: 0
 --- !u!23 &405940650
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4690,7 +4689,6 @@ MonoBehaviour:
   gravity: 20
   fuerzaLanzamiento: 30
   fuerzaLanzamientoArriba: 15
-  balaAgarrada: 0
 --- !u!136 &1255824691
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6354,7 +6352,6 @@ MonoBehaviour:
   gravity: 20
   fuerzaLanzamiento: 1
   fuerzaLanzamientoArriba: 15
-  balaAgarrada: 0
 --- !u!136 &1594758570
 CapsuleCollider:
   m_ObjectHideFlags: 0
